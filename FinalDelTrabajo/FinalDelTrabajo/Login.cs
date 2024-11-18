@@ -8,15 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using TrabajoFinall;
 
 namespace FinalDelTrabajo
 {
     public partial class Registro : Form
     {
+        //creamos la pagina inicio
+        Inicio Ventana;
         public Registro()
         {
             InitializeComponent();
+            Ventana = new Inicio(this);
         }
+
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -100,5 +106,22 @@ namespace FinalDelTrabajo
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int Lparam);
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Farid" && txtContraseña.Text == "AmaruMamaYuca")
+            {
+                Ventana.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("el usuario o contraseña son incorrectos");
+            }
+        }
     }
 }

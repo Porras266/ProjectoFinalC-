@@ -27,5 +27,10 @@ namespace FinalDelTrabajo
             lblHora.Text = DateTime.Now.ToLongTimeString(); 
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

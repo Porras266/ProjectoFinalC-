@@ -43,10 +43,10 @@
             this.BtnSoporte = new System.Windows.Forms.Button();
             this.BtnHorarioAtencion = new System.Windows.Forms.Button();
             this.btnEstadoCitas = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAgendarCita = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAgendarCita = new System.Windows.Forms.Panel();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.PanelArriba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.PanelIzquierdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.btnAgendarCita.SuspendLayout();
+            this.PanelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelArriba
@@ -70,7 +70,6 @@
             this.PanelArriba.Name = "PanelArriba";
             this.PanelArriba.Size = new System.Drawing.Size(1055, 34);
             this.PanelArriba.TabIndex = 0;
-            this.PanelArriba.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.PanelArriba.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelArriba_MouseDown);
             // 
             // btnRestaurar
@@ -133,7 +132,7 @@
             this.PanelIzquierdo.Controls.Add(this.BtnSoporte);
             this.PanelIzquierdo.Controls.Add(this.BtnHorarioAtencion);
             this.PanelIzquierdo.Controls.Add(this.btnEstadoCitas);
-            this.PanelIzquierdo.Controls.Add(this.button2);
+            this.PanelIzquierdo.Controls.Add(this.btnAgendarCita);
             this.PanelIzquierdo.Controls.Add(this.btnInicio);
             this.PanelIzquierdo.Controls.Add(this.pictureBox1);
             this.PanelIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
@@ -149,7 +148,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(6, 32);
             this.panel5.TabIndex = 4;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel4
             // 
@@ -215,6 +213,7 @@
             this.BtnHorarioAtencion.TabIndex = 3;
             this.BtnHorarioAtencion.Text = "      Horario de Atencion";
             this.BtnHorarioAtencion.UseVisualStyleBackColor = true;
+            this.BtnHorarioAtencion.Click += new System.EventHandler(this.BtnHorarioAtencion_Click);
             // 
             // btnEstadoCitas
             // 
@@ -231,22 +230,24 @@
             this.btnEstadoCitas.TabIndex = 3;
             this.btnEstadoCitas.Text = "Estado Citas";
             this.btnEstadoCitas.UseVisualStyleBackColor = true;
+            this.btnEstadoCitas.Click += new System.EventHandler(this.btnEstadoCitas_Click);
             // 
-            // button2
+            // btnAgendarCita
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 32);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Agendar Cita";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAgendarCita.FlatAppearance.BorderSize = 0;
+            this.btnAgendarCita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAgendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgendarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendarCita.ForeColor = System.Drawing.Color.White;
+            this.btnAgendarCita.Image = ((System.Drawing.Image)(resources.GetObject("btnAgendarCita.Image")));
+            this.btnAgendarCita.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgendarCita.Location = new System.Drawing.Point(3, 226);
+            this.btnAgendarCita.Name = "btnAgendarCita";
+            this.btnAgendarCita.Size = new System.Drawing.Size(204, 32);
+            this.btnAgendarCita.TabIndex = 3;
+            this.btnAgendarCita.Text = "Agendar Cita";
+            this.btnAgendarCita.UseVisualStyleBackColor = true;
+            this.btnAgendarCita.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnInicio
             // 
@@ -263,6 +264,7 @@
             this.btnInicio.TabIndex = 3;
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // pictureBox1
             // 
@@ -274,17 +276,17 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // btnAgendarCita
+            // PanelContenedor
             // 
-            this.btnAgendarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btnAgendarCita.Controls.Add(this.button1);
-            this.btnAgendarCita.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAgendarCita.Location = new System.Drawing.Point(207, 34);
-            this.btnAgendarCita.Name = "btnAgendarCita";
-            this.btnAgendarCita.Size = new System.Drawing.Size(848, 616);
-            this.btnAgendarCita.TabIndex = 2;
-            this.btnAgendarCita.Paint += new System.Windows.Forms.PaintEventHandler(this.btnAgendarCita_Paint);
-            this.btnAgendarCita.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelFondo_MouseDown);
+            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.PanelContenedor.Controls.Add(this.button1);
+            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedor.Location = new System.Drawing.Point(207, 34);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(848, 616);
+            this.PanelContenedor.TabIndex = 2;
+
+
             // 
             // button1
             // 
@@ -301,7 +303,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1055, 650);
-            this.Controls.Add(this.btnAgendarCita);
+            this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.PanelIzquierdo);
             this.Controls.Add(this.PanelArriba);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -315,7 +317,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.PanelIzquierdo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.btnAgendarCita.ResumeLayout(false);
+            this.PanelContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -329,7 +331,7 @@
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.Panel PanelIzquierdo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel btnAgendarCita;
+        private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Panel panel5;
@@ -339,7 +341,7 @@
         private System.Windows.Forms.Button BtnSoporte;
         private System.Windows.Forms.Button BtnHorarioAtencion;
         private System.Windows.Forms.Button btnEstadoCitas;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAgendarCita;
         private System.Windows.Forms.Button button1;
     }
 }

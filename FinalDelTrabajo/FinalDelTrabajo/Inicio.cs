@@ -8,14 +8,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using FinalDelTrabajo;
 
 namespace TrabajoFinall
 {
     public partial class Inicio : Form
     {
-        public Inicio()
+        private Registro registro1;
+        public Inicio(Registro registro1)
         {
             InitializeComponent();
+            this.registro1 = registro1;
+        }
+
+        //creamos el metodo para abrir cualquier form
+        private void AbrirForm(object Abrir)
+        {
+            //preguntamos si existe algun control dentro del panel de ser verdadero lo eliminamos 
+            if (this.PanelContenedor.Controls.Count > 0)
+                this.PanelContenedor.Controls.RemoveAt(0);
+            //creamos un formulario con un nombre "abrirForm"  y deicmos que sea igual al objeto que recibe 
+            Form AbrirForm = Abrir as Form;
+            //decimos que no es un formulario principal si, no secundario
+            AbrirForm.TopLevel = false;
+            //esto hara que se completo a todo el panel contenedor 
+            AbrirForm.Dock = DockStyle.Fill;
+            //agregamos el panel 
+            this.PanelContenedor.Controls.Add(AbrirForm);
+            //establecemos la instancia como contenedor de datos de nuestro panel 
+            this.PanelContenedor.Tag = AbrirForm;
+            //mostramos 
+            AbrirForm.Show();
+        
+        }
+
+        //boton para cerrar 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
@@ -24,17 +54,6 @@ namespace TrabajoFinall
             btnMaximizar.Visible = false;
             btnMinimizar.Visible = true;
             btnRestaurar.Visible = true;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        //boton para cerrar 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         //boton restaurar para volver a poner en ventana el programa
@@ -51,45 +70,53 @@ namespace TrabajoFinall
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        //cargamos la pantalla de inicio al cargar el Form1
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btnInicio_Click(null, e);
         }
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PanelFondo_MouseDown(object sender, MouseEventArgs e)
-        {
-         
-        }
         //para mover la pagina 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int Lparam);
 
+        //mover el panel de arriba del form
         private void PanelArriba_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnAgendarCita_Paint(object sender, PaintEventArgs e)
-        {
 
+        //abrir forms
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new AgendarCita());
         }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            AbrirForm (new Entrada());
+        }
+        //abrir el panel agendar citas
+        private void btnEstadoCitas_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new HistorialCita());
+        }
+
+        //abrir el panel horario de atencion
+        private void BtnHorarioAtencion_Click(object sender, EventArgs e)
+        {
+            AbrirForm (new Horario_De_Atencion());
+        }
+        //abrir el panel soporte
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new Soporte());
+        }
+
+      
     }
 }
