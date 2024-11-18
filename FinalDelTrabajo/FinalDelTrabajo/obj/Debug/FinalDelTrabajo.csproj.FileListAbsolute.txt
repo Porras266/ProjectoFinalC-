@@ -1,0 +1,11 @@
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Registro.resources
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Properties.Resources.resources
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.csproj.GenerateResource.cache
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\bin\Debug\FinalDelTrabajo.exe.config
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\bin\Debug\FinalDelTrabajo.exe
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\bin\Debug\FinalDelTrabajo.pdb
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.exe
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.pdb
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\TrabajoFinall.Inicio.resources
