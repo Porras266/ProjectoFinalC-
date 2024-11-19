@@ -32,5 +32,15 @@ namespace FinalDelTrabajo
         {
 
         }
+
+        private void lblSubtitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

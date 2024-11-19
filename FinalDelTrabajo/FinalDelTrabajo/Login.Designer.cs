@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(73)))));
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -149,10 +149,11 @@
             // 
             this.linkLabelContraseña.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linkLabelContraseña.AutoSize = true;
+            this.linkLabelContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelContraseña.LinkColor = System.Drawing.Color.DarkGray;
-            this.linkLabelContraseña.Location = new System.Drawing.Point(443, 282);
+            this.linkLabelContraseña.Location = new System.Drawing.Point(432, 279);
             this.linkLabelContraseña.Name = "linkLabelContraseña";
-            this.linkLabelContraseña.Size = new System.Drawing.Size(142, 13);
+            this.linkLabelContraseña.Size = new System.Drawing.Size(179, 16);
             this.linkLabelContraseña.TabIndex = 0;
             this.linkLabelContraseña.TabStop = true;
             this.linkLabelContraseña.Text = "Has olvidado la contraseña?";
@@ -199,7 +200,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Registro";
-            this.Opacity = 0.85D;
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Registro_MouseDown);

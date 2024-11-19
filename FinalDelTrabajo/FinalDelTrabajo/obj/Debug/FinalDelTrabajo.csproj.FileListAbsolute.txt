@@ -13,3 +13,4 @@ C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTr
 C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Entrada.resources
 C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Horario_De_Atencion.resources
 C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Soporte.resources
+C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.HistorialCita.resources

@@ -21,5 +21,11 @@ namespace FinalDelTrabajo
         {
 
         }
+
+        private void FechaHora_Tick(object sender, EventArgs e)
+        {
+            lblHora1.Text = DateTime.Now.ToShortTimeString();
+            lblFecha2.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

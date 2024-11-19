@@ -9,16 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using FinalDelTrabajo;
+using System.Diagnostics.Eventing.Reader;
 
 namespace TrabajoFinall
 {
     public partial class Inicio : Form
     {
+        //declaramos registro sobre el login
         private Registro registro1;
+
+        private Registro loginForm;
+
         public Inicio(Registro registro1)
         {
             InitializeComponent();
             this.registro1 = registro1;
+            loginForm = registro1; // Guarda la referencia de Form1
         }
 
         //creamos el metodo para abrir cualquier form
@@ -117,6 +123,25 @@ namespace TrabajoFinall
             AbrirForm(new Soporte());
         }
 
-      
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            loginForm.Show();
+        }
+
+        private void btnInicio_Click_1(object sender, EventArgs e)
+        {
+            AbrirForm(new Entrada());
+        }
+
+        private void btnHouse_Click(object sender, EventArgs e)
+        {
+    
+        }
     }
 }

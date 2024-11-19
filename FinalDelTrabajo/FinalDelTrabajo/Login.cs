@@ -114,9 +114,12 @@ namespace FinalDelTrabajo
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "Farid" && txtContraseña.Text == "AmaruMamaYuca")
+            if (txtUsuario.Text == "Andres Porras" && txtContraseña.Text == "Porras")
             {
                 Ventana.Visible = true;
+                txtUsuario.Text = "USUARIO";
+                txtContraseña.Text = "CONTRASEÑA";
+                this.Visible = false;                  
             }
             else
             {
