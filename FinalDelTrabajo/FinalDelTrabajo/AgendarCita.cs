@@ -52,5 +52,10 @@ namespace FinalDelTrabajo
             lblHora1.Text = DateTime.Now.ToShortTimeString();
             lblFecha2.Text = DateTime.Now.ToShortDateString();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

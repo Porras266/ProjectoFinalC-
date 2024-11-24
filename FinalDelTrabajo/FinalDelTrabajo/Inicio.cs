@@ -68,6 +68,7 @@ namespace TrabajoFinall
             this.WindowState = FormWindowState.Normal;
             btnRestaurar.Visible = false;
             btnMaximizar.Visible = true;
+            
         }
         
         //boton para minimizar
