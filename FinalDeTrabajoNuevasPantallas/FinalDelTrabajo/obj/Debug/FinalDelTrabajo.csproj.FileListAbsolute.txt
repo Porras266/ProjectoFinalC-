@@ -14,3 +14,19 @@ C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTr
 C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Horario_De_Atencion.resources
 C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Soporte.resources
 C:\Users\andre\source\repos\FinalDelTrabajo\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.HistorialCita.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\bin\Debug\FinalDelTrabajo.exe.config
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\bin\Debug\FinalDelTrabajo.exe
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\bin\Debug\FinalDelTrabajo.pdb
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.csproj.AssemblyReference.cache
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.AgendarCita.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Entrada.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.HistorialCita.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Horario_De_Atencion.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\TrabajoFinall.Inicio.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Registro.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Properties.Resources.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.Soporte.resources
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.csproj.GenerateResource.cache
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.csproj.CoreCompileInputs.cache
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.exe
+C:\Users\fazur\Desktop\METO FINAL\copia\ProjectoFinalC-\FinalDeTrabajoNuevasPantallas\FinalDelTrabajo\obj\Debug\FinalDelTrabajo.pdb
