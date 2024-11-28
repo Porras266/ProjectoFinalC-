@@ -42,6 +42,7 @@
             // 
             // lblSubtitulo
             // 
+            this.lblSubtitulo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblSubtitulo.AutoSize = true;
             this.lblSubtitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblSubtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,11 +56,14 @@
             // 
             // lblHora
             // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.AutoSize = true;
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(136, 187);
+            this.lblHora.Location = new System.Drawing.Point(129, 187);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(305, 108);
             this.lblHora.TabIndex = 7;
@@ -68,11 +72,14 @@
             // 
             // lblFecha
             // 
+            this.lblFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFecha.AutoSize = true;
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lblFecha.Location = new System.Drawing.Point(75, 295);
+            this.lblFecha.Location = new System.Drawing.Point(53, 295);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(213, 55);
             this.lblFecha.TabIndex = 8;

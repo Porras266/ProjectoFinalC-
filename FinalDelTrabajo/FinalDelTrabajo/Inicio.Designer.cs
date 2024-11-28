@@ -51,8 +51,8 @@
             this.btnEstadoCitas = new System.Windows.Forms.Button();
             this.btnAgendarCita = new System.Windows.Forms.Button();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PanelArriba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHouse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,7 +69,8 @@
             // 
             // PanelArriba
             // 
-            this.PanelArriba.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PanelArriba.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelArriba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(62)))));
             this.PanelArriba.Controls.Add(this.btnHouse);
             this.PanelArriba.Controls.Add(this.btnInicio);
@@ -116,6 +117,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(841, 35);
             this.pictureBox3.Name = "pictureBox3";
@@ -126,6 +128,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -137,6 +140,7 @@
             // 
             // btnOut
             // 
+            this.btnOut.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnOut.Image = ((System.Drawing.Image)(resources.GetObject("btnOut.Image")));
             this.btnOut.Location = new System.Drawing.Point(1010, 38);
             this.btnOut.Name = "btnOut";
@@ -205,7 +209,8 @@
             // 
             // PanelIzquierdo
             // 
-            this.PanelIzquierdo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.PanelIzquierdo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.PanelIzquierdo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(66)))));
             this.PanelIzquierdo.Controls.Add(this.pictureBox1);
             this.PanelIzquierdo.Controls.Add(this.panel5);
@@ -334,7 +339,9 @@
             // 
             // PanelContenedor
             // 
-            this.PanelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(73)))));
             this.PanelContenedor.Controls.Add(this.pictureBox2);
             this.PanelContenedor.Controls.Add(this.button1);
@@ -342,6 +349,15 @@
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(851, 569);
             this.PanelContenedor.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(0, 0);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -352,15 +368,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(0, 0);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Inicio
             // 
